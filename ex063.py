@@ -1,0 +1,12 @@
+n = int(input('Quantos termos deseja mostrar? '))
+t1 = 0
+t2 = 1
+c = 0
+b = 0
+print(f'{t1} {t2}', end=' ')
+while c != (n - 2):
+    b = t1 + t2
+    print(b, end=' ')
+    t1 = t2
+    t2 = b
+    c += 1
